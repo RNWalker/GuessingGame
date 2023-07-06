@@ -1,7 +1,7 @@
 public class WeatherCheck {
     public static void main(String[] args) {
 
-        double temp = 29;
+        double temp = 24;
         boolean currentlyRaining = true;
 
         if (temp >= 25.0 && !currentlyRaining) {
@@ -15,14 +15,13 @@ public class WeatherCheck {
         }
 
         double temperature = 22.2;
-        String currentRain = "yes";
+        String currentRain = "no";
 
         String rainResult = currentRain.equals("yes") ? "umbrella time" : "no umbrella time";
-        double tempResult = temperature > 25 ? "hot hot hot" : "not not not hot";
+        String tempResult = (temperature > 25) ? "hot hot hot" : "not not not hot";
         System.out.println(rainResult);
         System.out.println(tempResult);
-
-
+        
 
     }
 }
