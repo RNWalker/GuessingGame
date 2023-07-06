@@ -1,8 +1,8 @@
 public class WeatherCheck {
     public static void main(String[] args) {
 
-        double temp = 22.2;
-        boolean currentlyRaining = false;
+        double temp = 29;
+        boolean currentlyRaining = true;
 
         if (temp >= 25.0 && !currentlyRaining) {
             System.out.println("How about shorts and a parasol");
@@ -13,5 +13,16 @@ public class WeatherCheck {
         } else {
             System.out.println("Woolley jumper weather maybe?");
         }
+
+        double temperature = 22.2;
+        String currentRain = "yes";
+
+        String rainResult = currentRain.equals("yes") ? "umbrella time" : "no umbrella time";
+        double tempResult = temperature > 25 ? "hot hot hot" : "not not not hot";
+        System.out.println(rainResult);
+        System.out.println(tempResult);
+
+
+
     }
 }
