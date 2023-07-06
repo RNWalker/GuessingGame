@@ -20,5 +20,6 @@ public class GuessingGame {
         } else {
             System.out.println("correct!");
         }
+
     }
 }
