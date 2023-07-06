@@ -1,4 +1,7 @@
+import java.util.Scanner;
+
 public class WeatherCheck {
+
     public static void main(String[] args) {
 
         double temp = 24;
@@ -14,14 +17,21 @@ public class WeatherCheck {
             System.out.println("Woolley jumper weather maybe?");
         }
 
-        double temperature = 22.2;
-        String currentRain = "no";
+//        double temperature = 22.2;
+//        String currentRain = "no";
 
-        String rainResult = currentRain.equals("yes") ? "umbrella time" : "no umbrella time";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What is the temperature in degrees celsius?");
+        double temperature = sc.nextDouble();
         String tempResult = (temperature > 25) ? "hot hot hot" : "not not not hot";
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Is it raining outside, yes or no?");
+        String currentRain = input.findInLine();
+        String rainResult = currentRain.equals("yes") ? "umbrella time" : "no umbrella time";
         System.out.println(rainResult);
         System.out.println(tempResult);
-        
+
 
     }
 }
