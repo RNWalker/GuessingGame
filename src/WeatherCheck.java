@@ -24,13 +24,14 @@ public class WeatherCheck {
         System.out.println("What is the temperature in degrees celsius?");
         double temperature = sc.nextDouble();
         String tempResult = (temperature > 25) ? "hot hot hot" : "not not not hot";
-
-        Scanner input = new Scanner(System.in);
-        System.out.println("Is it raining outside, yes or no?");
-        String currentRain = input.findInLine();
-        String rainResult = currentRain.equals("yes") ? "umbrella time" : "no umbrella time";
-        System.out.println(rainResult);
         System.out.println(tempResult);
+
+       Scanner input = new Scanner(System.in);
+       System.out.println("Is it raining outside, yes or no?");
+       String currentRain = input.nextLine();
+       String rainResult = currentRain.equals("yes") ? "umbrella time" : "no umbrella time";
+       System.out.println(rainResult);
+
 
 
     }
